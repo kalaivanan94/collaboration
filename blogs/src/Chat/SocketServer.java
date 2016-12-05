@@ -1,10 +1,5 @@
 package Chat;
 
-public class SocketServer {
-
-	public SocketServer() {
-		// TODO Auto-generated constructor stubpackage Chat;
-
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
@@ -13,18 +8,20 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
- 
+
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
- 
+
 import org.json.JSONException;
 import org.json.JSONObject;
- 
+
 import com.google.common.collect.Maps;
- 
+
+
+
 @ServerEndpoint("/chat")
 public class SocketServer {
  
@@ -185,8 +182,6 @@ public class SocketServer {
             }
         }
     }
-}
 
 	}
 
-}

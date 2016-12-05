@@ -50,7 +50,7 @@ function openSocket() {
  
     // Create a new instance of the websocket
     webSocket = new WebSocket("ws://" + socket_url + ":" + port
-            + "/GroupChat/chat?name=" + name);
+            + "/blogs/chat?name=" + name);
  
     /**
      * Binds functions to the listeners for the websocket.
